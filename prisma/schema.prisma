@@ -15,8 +15,9 @@ datasource db {
 }
 
 model Resume{
-  id           String    @id @default(uuid())
-  createdAt    DateTime  @default(now())
-  title        String
-  description  String
+  resumeId      String    @id @default(uuid())
+  createdAt     DateTime  @default(now())
+  title         String
+  userEmail     String
+  userName      String
 }
